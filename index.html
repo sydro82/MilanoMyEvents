@@ -25,6 +25,8 @@ h1{font-family:Fraunces,serif;font-weight:700;font-size:34px;margin:0;letter-spa
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
 .seg button{border:0;background:none;color:var(--ink);padding:7px 14px;font:inherit;cursor:pointer}
 .seg button.on{background:var(--accent);color:var(--bg)}
+.propose{display:inline-block;margin-top:12px;padding:7px 14px;border-radius:999px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;font-size:13px}
+.propose:hover{opacity:.85}
 .iconbtn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
 .iconbtn.on{background:var(--accent);color:var(--bg)}
 input[type=search][hidden]{display:none}
@@ -89,6 +91,7 @@ footer{color:var(--muted);font-size:12px;margin-top:28px}
 <header>
   <h1>Milano My Events</h1>
   <div class="sub">Concerti, ritrovi ed eventi unificati dalle tue fonti · aggiornato il <span id="upd"></span></div>
+  <a class="propose" href="https://docs.google.com/forms/d/e/1FAIpQLSfFnA3kNeLXcWYXN6R-b5OzC9S1ODKIlm3F49-tJBzIdMUWrA/viewform" target="_blank" rel="noopener">＋ Proponi un evento o una fonte</a>
 </header>
 <div class="wrap">
   <div class="stats" id="stats"></div>
