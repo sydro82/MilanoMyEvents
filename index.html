@@ -33,6 +33,7 @@ h1{font-family:Fraunces,serif;font-weight:700;font-size:34px;margin:0;letter-spa
 .propose:hover{opacity:.85}
 .brand{display:flex;align-items:center;gap:12px}
 .brand img{width:44px;height:44px;border-radius:10px;flex:none}
+.seg.off{opacity:.35;pointer-events:none}
 .iconbtn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
 .iconbtn.on{background:var(--accent);color:var(--bg)}
 input[type=search][hidden]{display:none}
@@ -107,7 +108,7 @@ footer{color:var(--muted);font-size:12px;margin-top:28px}
   <div class="stats" id="stats"></div>
   <div class="bar">
     <div class="seg" id="view">
-      <button data-v="agenda" class="on">Lista</button><button data-v="month">Calendario</button>
+      <button data-v="month">Calendario</button><button data-v="agenda" class="on">Lista</button>
     </div>
     <div class="seg" id="range">
       <button data-r="oggi">Oggi</button><button data-r="domani">Domani</button><button data-r="weekend">Weekend</button><button data-r="all" class="on">All</button>
@@ -240,6 +241,7 @@ function render(){
   $("#stats").innerHTML=`<span><b>${inRange.length}</b>eventi nel periodo</span>`;
   const nAdv=st.cats.size+st.srcs.size; $("#advN").textContent=nAdv?`· ${nAdv} attivi`:"";
   $("#main").innerHTML = st.view==="agenda" ? renderAgenda(short) : renderMonth(short);
+  $("#range").classList.toggle("off",st.view!=="agenda");
   if(st.view==="month"){
     $("#pm").onclick=()=>{const [y,m]=st.month.split("-").map(Number);const d=new Date(y,m-2,1);st.month=iso(d).slice(0,7);render();};
     $("#nm").onclick=()=>{const [y,m]=st.month.split("-").map(Number);const d=new Date(y,m,1);st.month=iso(d).slice(0,7);render();};
