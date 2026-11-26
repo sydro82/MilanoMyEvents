@@ -57,6 +57,10 @@ input[type=search]{flex:1;min-width:180px;border:1px solid var(--line);backgroun
 .day{margin:18px 0 6px;font-family:Fraunces,serif;font-size:19px;display:flex;align-items:baseline;gap:10px;position:sticky;top:0;background:var(--bg);padding:6px 0;z-index:2}
 .day small{font-family:Inter;font-size:12px;color:var(--muted)}
 .day.today{color:var(--c-concerti)}
+.anchor{height:0;scroll-margin-top:0}
+.dnav{margin-left:auto;display:flex;gap:6px}
+.dnav button{width:30px;height:30px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:18px;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.dnav button:disabled{opacity:.3;cursor:default}
 .ev{display:grid;grid-template-columns:58px 1fr;gap:10px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--g);border-radius:10px;padding:10px 12px;margin:6px 0}
 .ev .t{font-weight:600;font-variant-numeric:tabular-nums}
 .ev .t small{display:block;font-weight:400;color:var(--muted);font-size:11.5px}
@@ -210,7 +214,7 @@ function renderAgenda(short){
   const [from,to]=rangeBounds(); const days=occurrences(short,from,to);
   const keys=Object.keys(days).sort();
   if(!keys.length) return `<div class="empty">Nessun evento con questi filtri.</div>`;
-  return keys.map(k=>`<div class="day${k===today?" today":""}">${fmtD(k,{weekday:"long",day:"numeric",month:"long"})}<small>${days[k].length} eventi${k===today?" · oggi":""}</small></div>`+days[k].map(evCard).join("")).join("");
+  return keys.map((k,i)=>`<div class="anchor" id="d-${k}"></div><div class="day${k===today?" today":""}">${fmtD(k,{weekday:"long",day:"numeric",month:"long"})}<small>${days[k].length} eventi${k===today?" · oggi":""}</small><span class="dnav"><button data-go="${keys[i-1]||""}" ${i?"":"disabled"} aria-label="Giorno precedente">‹</button><button data-go="${keys[i+1]||""}" ${i<keys.length-1?"":"disabled"} aria-label="Giorno successivo">›</button></span></div>`+days[k].map(evCard).join("")).join("");
 }
 function renderMonth(short){
   const [y,m]=st.month.split("-").map(Number); const first=new Date(y,m-1,1);
@@ -252,6 +256,7 @@ function showDay(k,ev){
 $("#status").innerHTML = META.sources.map(s=>`<div class="src"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a><span class="${s.cls}">${esc(s.status)}</span></div>`).join("");
 document.querySelectorAll("#view button").forEach(b=>b.onclick=()=>{st.view=b.dataset.v;document.querySelectorAll("#view button").forEach(x=>x.classList.toggle("on",x===b));render();});
 document.querySelectorAll("#range button").forEach(b=>b.onclick=()=>{st.range=b.dataset.r;document.querySelectorAll("#range button").forEach(x=>x.classList.toggle("on",x===b));render();});
+$("#main").addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(!b||!b.dataset.go)return;const a=document.getElementById("d-"+b.dataset.go);if(a)a.scrollIntoView({behavior:"smooth",block:"start"});});
 $("#q").oninput=e=>{st.q=e.target.value.trim();render();};
 $("#qbtn").onclick=()=>{const q=$("#q");const show=q.hidden;q.hidden=!show;$("#qbtn").classList.toggle("on",show);
   if(show){q.focus();}else{q.value="";if(st.q){st.q="";render();}}};
