@@ -29,7 +29,12 @@ h1{font-family:Fraunces,serif;font-weight:700;font-size:34px;margin:0;letter-spa
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
 .seg button{border:0;background:none;color:var(--ink);padding:7px 14px;font:inherit;cursor:pointer}
 .seg button.on{background:var(--accent);color:var(--bg)}
-.propose{display:inline-block;margin-top:12px;padding:7px 14px;border-radius:999px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;font-size:13px}
+.actions{display:flex;align-items:center;gap:8px;margin-top:12px}
+.sharebtn{width:34px;height:34px;border-radius:999px;border:0;background:var(--accent);color:var(--bg);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex:none}
+.sharebtn:hover{opacity:.85}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--accent);color:var(--bg);padding:8px 16px;border-radius:999px;font-size:13px;z-index:20;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+.propose{display:inline-block;padding:7px 14px;border-radius:999px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;font-size:13px}
 .propose:hover{opacity:.85}
 .brand{display:flex;align-items:center;gap:12px}
 .brand img{width:44px;height:44px;border-radius:10px;flex:none}
@@ -102,7 +107,7 @@ footer{color:var(--muted);font-size:12px;margin-top:28px}
 <header>
   <h1 class="brand"><img src="logo.png" alt="MME" width="44" height="44">Milano My Events</h1>
   <div class="sub">Concerti, ritrovi ed eventi unificati dalle tue fonti · aggiornato il <span id="upd"></span></div>
-  <a class="propose" href="https://docs.google.com/forms/d/e/1FAIpQLSfFnA3kNeLXcWYXN6R-b5OzC9S1ODKIlm3F49-tJBzIdMUWrA/viewform" target="_blank" rel="noopener">＋ Proponi un evento o una fonte interessante</a>
+  <div class="actions"><a class="propose" href="https://docs.google.com/forms/d/e/1FAIpQLSfFnA3kNeLXcWYXN6R-b5OzC9S1ODKIlm3F49-tJBzIdMUWrA/viewform" target="_blank" rel="noopener">＋ Proponi un evento o una fonte</a><button class="sharebtn" aria-label="Condividi" title="Condividi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></div>
 </header>
 <div class="wrap">
   <div class="stats" id="stats"></div>
@@ -124,7 +129,7 @@ footer{color:var(--muted);font-size:12px;margin-top:28px}
   <div class="grid2">
     <div>
       <main id="main"></main>
-      <div style="margin:24px 0 8px"><a class="propose" href="https://docs.google.com/forms/d/e/1FAIpQLSfFnA3kNeLXcWYXN6R-b5OzC9S1ODKIlm3F49-tJBzIdMUWrA/viewform" target="_blank" rel="noopener">＋ Proponi un evento o una fonte interessante</a></div>
+      <div style="margin:24px 0 8px"><div class="actions"><a class="propose" href="https://docs.google.com/forms/d/e/1FAIpQLSfFnA3kNeLXcWYXN6R-b5OzC9S1ODKIlm3F49-tJBzIdMUWrA/viewform" target="_blank" rel="noopener">＋ Proponi un evento o una fonte</a><button class="sharebtn" aria-label="Condividi" title="Condividi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></div></div>
     </div>
     <aside>
       <div class="box"><h3>In corso (mostre e periodi lunghi)</h3><div id="long"></div></div>
@@ -259,6 +264,13 @@ $("#status").innerHTML = META.sources.map(s=>`<div class="src"><a href="${esc(s.
 document.querySelectorAll("#view button").forEach(b=>b.onclick=()=>{st.view=b.dataset.v;document.querySelectorAll("#view button").forEach(x=>x.classList.toggle("on",x===b));render();});
 document.querySelectorAll("#range button").forEach(b=>b.onclick=()=>{st.range=b.dataset.r;document.querySelectorAll("#range button").forEach(x=>x.classList.toggle("on",x===b));render();});
 $("#main").addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(!b||!b.dataset.go)return;const a=document.getElementById("d-"+b.dataset.go);if(a)a.scrollIntoView({behavior:"smooth",block:"start"});});
+const SHARE_URL="https://sydro82.github.io/MilanoMyEvents/";
+function toast(msg){let el=document.getElementById("toast");if(!el){el=document.createElement("div");el.id="toast";el.className="toast";document.body.appendChild(el);}el.textContent=msg;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2000);}
+document.querySelectorAll(".sharebtn").forEach(b=>b.onclick=async()=>{
+  const data={title:"Milano My Events",text:"Concerti, ritrovi ed eventi a Milano",url:SHARE_URL};
+  try{ if(navigator.share){await navigator.share(data);return;} }catch(e){ if(e&&e.name==="AbortError")return; }
+  try{ await navigator.clipboard.writeText(SHARE_URL); toast("Link copiato"); }catch(e){ toast(SHARE_URL); }
+});
 $("#q").oninput=e=>{st.q=e.target.value.trim();render();};
 $("#qbtn").onclick=()=>{const q=$("#q");const show=q.hidden;q.hidden=!show;$("#qbtn").classList.toggle("on",show);
   if(show){q.focus();}else{q.value="";if(st.q){st.q="";render();}}};
