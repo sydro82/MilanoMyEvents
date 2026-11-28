@@ -1,17 +1,17 @@
 {
  "snapshot": "2026-11-28",
- "updated": "28 novembre 2026, 14:53",
+ "updated": "28 novembre 2026, 14:58",
  "sources": [
   {
    "name": "Corte dei Miracoli",
    "url": "https://www.latigredicarta.it/corte_dei_miracoli/calendario/",
-   "status": "OK · 26",
+   "status": "OK · 31",
    "cls": "ok"
   },
   {
    "name": "Biko",
    "url": "https://www.bikoclub.net/",
-   "status": "OK · 25",
+   "status": "OK · 20",
    "cls": "ok"
   },
   {
@@ -23,13 +23,13 @@
   {
    "name": "Better Together (sito)",
    "url": "https://www.bettertogetherspace.it/#ritrovi",
-   "status": "OK · 21",
+   "status": "OK · 16",
    "cls": "ok"
   },
   {
    "name": "Better Together (Instagram)",
    "url": "https://www.instagram.com/better.together.space/",
-   "status": "OK · post settimanale",
+   "status": "OK · nessun post attività nuovo",
    "cls": "ok"
   },
   {
@@ -41,7 +41,7 @@
   {
    "name": "Planetario",
    "url": "https://booking.lofficina.eu/Sito/Default.aspx?partner=PLAN",
-   "status": "OK · 81",
+   "status": "OK · 76",
    "cls": "ok"
   },
   {
@@ -53,14 +53,14 @@
   {
    "name": "Milano da Scrocco",
    "url": "https://www.milanodascrocco.com/eventi.php",
-   "status": "OK · 44",
+   "status": "OK · 53",
    "cls": "ok"
   },
   {
    "name": "Teatri Possibili",
    "url": "https://www.teatripossibili.it/eventi/elenco/",
-   "status": "OK · 12",
-   "cls": "ok"
+   "status": "Non raggiungibile oggi · dati del 23/11",
+   "cls": "warn"
   },
   {
    "name": "ParteciPrato (newsletter)",

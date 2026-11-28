@@ -1,99 +1,15 @@
 [
  {
   "title": "Ritrovo Better Together",
-  "start": "2026-11-23",
-  "end": "2026-11-23",
-  "time": "09:00",
-  "end_time": "20:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
-  "venue": "Birrificio La Ribalta, via Cevedale 3 (M3 Dergano)",
-  "price": "5€ primo mese / 12€ singolo / 40€ mese",
-  "url": "https://www.bettertogetherspace.it/#ritrovi",
-  "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali.",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "Ritrovo Better Together",
-  "start": "2026-11-24",
-  "end": "2026-11-24",
-  "time": "09:00",
-  "end_time": "18:30",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
-  "venue": "Lato B, viale Pasubio 14 (M2 Garibaldi)",
-  "price": "5€ primo mese / 12€ singolo / 40€ mese",
-  "url": "https://www.bettertogetherspace.it/#ritrovi",
-  "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "Ritrovo Better Together",
-  "start": "2026-11-25",
-  "end": "2026-11-25",
-  "time": "09:00",
-  "end_time": "18:30",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
-  "venue": "Lato B, viale Pasubio 14 (M2 Garibaldi)",
-  "price": "5€ primo mese / 12€ singolo / 40€ mese",
-  "url": "https://www.bettertogetherspace.it/#ritrovi",
-  "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "Ritrovo Better Together",
-  "start": "2026-11-26",
-  "end": "2026-11-26",
-  "time": "09:00",
-  "end_time": "23:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
-  "venue": "ParteciPrato, via Faravelli 31 (M5 Portello)",
-  "price": "5€ primo mese / 12€ singolo / 40€ mese",
-  "url": "https://www.bettertogetherspace.it/#ritrovi",
-  "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "Ritrovo Better Together",
-  "start": "2026-11-27",
-  "end": "2026-11-27",
-  "time": "09:00",
-  "end_time": "18:30",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
-  "venue": "Copernico Martesana, viale Monza 259 (M1 Precotto)",
-  "price": "5€ primo mese / 12€ singolo / 40€ mese",
-  "url": "https://www.bettertogetherspace.it/#ritrovi",
-  "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali.",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "Ritrovo Better Together",
   "start": "2026-11-30",
   "end": "2026-11-30",
   "time": "09:00",
   "end_time": "20:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Palazzina Appiani, viale Byron 2 (M2 Lanza)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -101,15 +17,11 @@
   "end": "2026-12-01",
   "time": "09:00",
   "end_time": "22:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Lato B, viale Pasubio 14 (M2 Garibaldi)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -117,15 +29,11 @@
   "end": "2026-12-02",
   "time": "09:00",
   "end_time": "18:30",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Lato B, viale Pasubio 14 (M2 Garibaldi)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -133,15 +41,11 @@
   "end": "2026-12-03",
   "time": "09:00",
   "end_time": "23:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "ParteciPrato, via Faravelli 31 (M5 Portello)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -149,15 +53,11 @@
   "end": "2026-12-04",
   "time": "09:00",
   "end_time": "20:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Palazzina Appiani, viale Byron 2 (M2 Lanza)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -165,15 +65,11 @@
   "end": "2026-12-09",
   "time": "09:00",
   "end_time": "20:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Palazzina Appiani, viale Byron 2 (M2 Lanza)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -181,15 +77,11 @@
   "end": "2026-12-10",
   "time": "09:00",
   "end_time": "23:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "ParteciPrato, via Faravelli 31 (M5 Portello)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -197,15 +89,11 @@
   "end": "2026-12-11",
   "time": "09:00",
   "end_time": "18:30",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Mia-Platform, via Imbonati 18 (M3 Maciachini)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -213,15 +101,11 @@
   "end": "2026-12-14",
   "time": "09:00",
   "end_time": "20:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Birrificio La Ribalta, via Cevedale 3 (M3 Dergano)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -229,15 +113,11 @@
   "end": "2026-12-15",
   "time": "09:00",
   "end_time": "22:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Lato B, viale Pasubio 14 (M2 Garibaldi)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -245,15 +125,11 @@
   "end": "2026-12-16",
   "time": "09:00",
   "end_time": "22:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Lato B, viale Pasubio 14 (M2 Garibaldi)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -261,15 +137,11 @@
   "end": "2026-12-17",
   "time": "09:00",
   "end_time": "23:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "ParteciPrato, via Faravelli 31 (M5 Portello)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -277,15 +149,11 @@
   "end": "2026-12-18",
   "time": "09:00",
   "end_time": "18:30",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Spaces Turati, via Turati 30 (M3 Turati)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
-  "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali.",
-  "kids": "",
-  "free": false
+  "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Il post Instagram del 27/11 indica invece Spaces Farini: verificare.",
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -293,15 +161,11 @@
   "end": "2026-12-21",
   "time": "09:00",
   "end_time": "20:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Palazzina Appiani, viale Byron 2 (M2 Lanza)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together",
@@ -309,15 +173,11 @@
   "end": "2026-12-22",
   "time": "09:00",
   "end_time": "22:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Lato B, viale Pasubio 14 (M2 Garibaldi)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  },
  {
   "title": "Ritrovo Better Together – cena conviviale di Natale",
@@ -325,14 +185,10 @@
   "end": "2026-12-23",
   "time": "09:00",
   "end_time": "22:00",
-  "source": "Better Together (sito)",
-  "group": "Better",
-  "cat": "Ritrovo",
   "venue": "Lato B, viale Pasubio 14 (M2 Garibaldi)",
   "price": "5€ primo mese / 12€ singolo / 40€ mese",
   "url": "https://www.bettertogetherspace.it/#ritrovi",
   "note": "Coworking 9–19, circoli di dialogo 11 e 16, pasti conviviali. Tessera dello spazio richiesta.",
-  "kids": "",
-  "free": false
+  "cat": "Ritrovo"
  }
 ]

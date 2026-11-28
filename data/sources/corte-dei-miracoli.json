@@ -1,115 +1,15 @@
 [
  {
-  "title": "OUT OF THE BLUES – jam delta & electric blues",
-  "start": "2026-11-23",
-  "end": "2026-11-23",
-  "time": "21:00",
-  "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
-  "venue": "Corte dei Miracoli, via Mortara 4",
-  "price": "5€",
-  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/out-of-the-blues-new-jam-blues-2/",
-  "note": "",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "Samizdat | Romanzi sovietici #4 – Čukovskaja",
-  "start": "2026-11-24",
-  "end": "2026-11-24",
-  "time": "19:00",
-  "end_time": "20:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Incontro",
-  "venue": "Corte dei Miracoli, via Mortara 4",
-  "price": "6€",
-  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/samizdat-romanzi-sovietici-4-cukovskaja/",
-  "note": "",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "CORTOCIRCUITO – Rassegna di corti indipendenti",
-  "start": "2026-11-24",
-  "end": "2026-11-24",
-  "time": "21:30",
-  "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Cinema",
-  "cat": "Cinema",
-  "venue": "Corte dei Miracoli, via Mortara 4",
-  "price": "5€",
-  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/cortocircuito-rassegna-di-corti-indipendenti-2/",
-  "note": "",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "VINELAND – Speciale Olstàr",
-  "start": "2026-11-25",
-  "end": "2026-11-25",
-  "time": "21:30",
-  "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Musica",
-  "venue": "Corte dei Miracoli, via Mortara 4",
-  "price": "5€",
-  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/vineland-dove-esaspera-il-reale-installazioni-e-ascolto-vinili/",
-  "note": "",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "MARMELLATA! – Jam session pop-rock",
-  "start": "2026-11-26",
-  "end": "2026-11-26",
-  "time": "19:00",
-  "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
-  "venue": "Corte dei Miracoli, via Mortara 4",
-  "price": "5€",
-  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/marmellata-jam-session-pop-rock-2/",
-  "note": "",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "SOUVENIR DE DJANGO – Gipsy Jam, opening: Tazio Forte 4tet",
-  "start": "2026-11-27",
-  "end": "2026-11-27",
-  "time": "21:00",
-  "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
-  "venue": "Corte dei Miracoli, via Mortara 4",
-  "price": "7€",
-  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/souvenir-de-django-gipsy-jam-opening-woody-gipsy-band/",
-  "note": "",
-  "kids": "",
-  "free": false
- },
- {
   "title": "Saturday Village Vanguard – BEAT NAUSEA",
   "start": "2026-11-28",
   "end": "2026-11-28",
   "time": "21:30",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "7€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/saturday-village-vanguard-hard-sax-quartet/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "RODA DE CHORO",
@@ -117,15 +17,11 @@
   "end": "2026-11-29",
   "time": "15:00",
   "end_time": "18:00",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "5€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/roda-de-choro/",
   "note": "",
-  "kids": "adatto",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "laCorteJam – opening: MOTMOT",
@@ -133,15 +29,11 @@
   "end": "2026-11-29",
   "time": "21:00",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "5€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/lacortejam-opening-humberto-amesquita-4tet/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "JAM BRASILIANA!",
@@ -149,15 +41,11 @@
   "end": "2026-11-30",
   "time": "21:00",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "5€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/jam-brasiliana-2/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "Direzioni letterarie / Le nuove forme del romanzo",
@@ -165,15 +53,11 @@
   "end": "2026-12-01",
   "time": "19:00",
   "end_time": "20:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Incontro",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "6€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/samizdat-romanzi-sovietici-2-salamov/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Incontro"
  },
  {
   "title": "Cineforum Spazio Noce: HOLY MOTORS, Carax (2012)",
@@ -181,15 +65,11 @@
   "end": "2026-12-01",
   "time": "21:30",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Cinema",
-  "cat": "Cinema",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "6€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/cineforum-spazio-noce-mind-game-2004/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Cinema"
  },
  {
   "title": "PAAC – Picture as a Concert",
@@ -197,15 +77,11 @@
   "end": "2026-12-02",
   "time": "21:00",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "7€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/paac-picture-as-a-concert/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "CENA POETICA!",
@@ -213,15 +89,11 @@
   "end": "2026-12-03",
   "time": "21:00",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Incontro",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "3€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/cena-poetica/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Incontro"
  },
  {
   "title": "Jam hip-hop funky r&b, opening: LIGHTWORKS",
@@ -229,15 +101,11 @@
   "end": "2026-12-04",
   "time": "21:00",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "7€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/jam-hip-hop-funky-rb-opening-la-banda-non-grata-guests/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "RODA DE CHORO",
@@ -245,15 +113,11 @@
   "end": "2026-12-05",
   "time": "15:00",
   "end_time": "18:00",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "5€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/roda-de-choro-2/",
   "note": "",
-  "kids": "adatto",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "Saturday Village Vanguard – TAAN Trio walks the Major Arcana Walk",
@@ -261,15 +125,11 @@
   "end": "2026-12-05",
   "time": "21:30",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "7€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/saturday-village-vanguard-tucci-di-ienno-nix/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "laCorteJam – opening: Nicolò Ricci Trio",
@@ -277,15 +137,11 @@
   "end": "2026-12-06",
   "time": "21:00",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "5€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/lacortejam-opening-anima/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "Storyville Sessions: Jam di Swing e Dixieland",
@@ -293,31 +149,23 @@
   "end": "2026-12-07",
   "time": "21:00",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "5€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/storyville-sessions-jam-di-jazz-tradizionale/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
-  "title": "Tradurre l'impossibile / slang, dialetti e argot",
+  "title": "Tradurre l'impossibile / slang, dialetti e vernacoli",
   "start": "2026-12-08",
   "end": "2026-12-08",
   "time": "19:00",
   "end_time": "20:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Incontro",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "6€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/samizdat-romanzi-sovietici-1-solzenycin/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Incontro"
  },
  {
   "title": "UFO – Film a sorpresa!",
@@ -325,31 +173,23 @@
   "end": "2026-12-08",
   "time": "21:30",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Cinema",
-  "cat": "Cinema",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "6€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/ufo-film-a-sorpresa-2/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Cinema"
  },
  {
-  "title": "BEATLES NIGHT!",
+  "title": "KONG JAM 空 > Cinemusic",
   "start": "2026-12-09",
   "end": "2026-12-09",
-  "time": "21:00",
+  "time": "21:30",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "5€",
-  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/beatles-night/",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/kong-jam-%e7%a9%ba/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "DUO IMPURO / sax + piano",
@@ -357,15 +197,11 @@
   "end": "2026-12-10",
   "time": "08:00",
   "end_time": "17:00",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "7€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/duo-impuro-sax-piano/",
   "note": "Orario 08:00–17:00 riportato dal sito: probabile errore, verificare",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "Jam balcanica – I Fintj Balkanj feat. Arturo Monico",
@@ -373,15 +209,11 @@
   "end": "2026-12-11",
   "time": "21:00",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "7€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/jam-balcanica-i-fintj-balkanj-feat-arturo-monico/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "Saturday Village Vanguard – Too Seriously Committed People",
@@ -389,15 +221,11 @@
   "end": "2026-12-12",
   "time": "21:30",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "7€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/saturday-village-vanguard-tetrad-4tet/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "#laCorteJam – opening: MK Trio",
@@ -405,14 +233,142 @@
   "end": "2026-12-13",
   "time": "21:00",
   "end_time": "23:30",
-  "source": "Corte dei Miracoli",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Corte dei Miracoli, via Mortara 4",
   "price": "5€",
   "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/lacortejam-opening-synthetics-trio/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
+ },
+ {
+  "title": "OUT OF THE BLUES – jam delta & electric blues",
+  "start": "2026-12-14",
+  "end": "2026-12-14",
+  "time": "21:00",
+  "end_time": "23:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "5€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/out-of-the-blues-new-jam-blues-2/",
+  "note": "",
+  "cat": "Concerto"
+ },
+ {
+  "title": "Prima di dirsi addio / Angelo Scuderi – Castelvecchi editore",
+  "start": "2026-12-15",
+  "end": "2026-12-15",
+  "time": "19:00",
+  "end_time": "20:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "6€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/prima-di-dirsi-addio-angelo-scuderi-castelvecchi-editore/",
+  "note": "",
+  "cat": "Incontro"
+ },
+ {
+  "title": "Il queer nel cinema orientale – THE WEDDING BANQUET di Andrew Ahn (2025)",
+  "start": "2026-12-15",
+  "end": "2026-12-15",
+  "time": "21:30",
+  "end_time": "23:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "6€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/il-queer-nel-cinema-orientale-linnocenza-di-koreeda-2023/",
+  "note": "",
+  "cat": "Cinema"
+ },
+ {
+  "title": "VINELAND – Speciale Olstàr",
+  "start": "2026-12-16",
+  "end": "2026-12-16",
+  "time": "21:30",
+  "end_time": "23:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "5€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/vineland-dove-esaspera-il-reale-installazioni-e-ascolto-vinili/",
+  "note": "",
+  "cat": "Musica"
+ },
+ {
+  "title": "MARMELLATA! – Picaro & The Magic Theatre",
+  "start": "2026-12-17",
+  "end": "2026-12-17",
+  "time": "21:00",
+  "end_time": "23:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "5€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/marmellata-jam-session-pop-rock-2/",
+  "note": "",
+  "cat": "Concerto"
+ },
+ {
+  "title": "Saturday Village Vanguard – ATACAMA",
+  "start": "2026-12-19",
+  "end": "2026-12-19",
+  "time": "21:30",
+  "end_time": "23:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "7€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/saturday-village-vanguard-wisteria/",
+  "note": "",
+  "cat": "Concerto"
+ },
+ {
+  "title": "laCorteJam – opening: TRIAGE",
+  "start": "2026-12-20",
+  "end": "2026-12-20",
+  "time": "21:00",
+  "end_time": "23:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "5€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/lacortejam-opening-rafael-schilt-4tet/",
+  "note": "",
+  "cat": "Concerto"
+ },
+ {
+  "title": "CORTOCIRCUITO – Rassegna di corti indipendenti",
+  "start": "2026-12-22",
+  "end": "2026-12-22",
+  "time": "21:30",
+  "end_time": "23:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "5€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/cortocircuito-rassegna-di-corti-indipendenti-2/",
+  "note": "",
+  "cat": "Cinema"
+ },
+ {
+  "title": "OPEN THE WINDOWS – con Myriam Nissim",
+  "start": "2026-12-23",
+  "end": "2026-12-23",
+  "time": "21:30",
+  "end_time": "23:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "7€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/open-the-windows-con-myriam-nissim/",
+  "note": "",
+  "cat": "Concerto"
+ },
+ {
+  "title": "JAM NATALIZIA KE DELIZIA",
+  "start": "2026-12-27",
+  "end": "2026-12-27",
+  "time": "21:00",
+  "end_time": "23:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "5€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/jam-natalizia-ke-delizia/",
+  "note": "",
+  "cat": "Concerto"
+ },
+ {
+  "title": "BEATLES NIGHT!",
+  "start": "2027-01-14",
+  "end": "2027-01-14",
+  "time": "21:00",
+  "end_time": "23:30",
+  "venue": "Corte dei Miracoli, via Mortara 4",
+  "price": "5€",
+  "url": "https://www.latigredicarta.it/corte_dei_miracoli/evento/beatles-night/",
+  "note": "",
+  "cat": "Concerto"
  }
 ]

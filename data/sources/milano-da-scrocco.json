@@ -1,21 +1,5 @@
 [
  {
-  "title": "Suoni Trasfigurati 2026: Kyoka all’ADI Design Museum",
-  "start": "2026-03-14",
-  "end": "2026-11-25",
-  "time": "",
-  "end_time": "",
-  "source": "Milano da Scrocco",
-  "group": "Altro",
-  "cat": "Musica",
-  "venue": "Milano",
-  "price": "Gratis / low cost",
-  "url": "https://www.milanodascrocco.com/evento.php?nome=1169_suoni-trasfigurati-2026-kyoka-inaugura-la-stagione-costellazioni-alladi-design-museum-di-milano",
-  "note": "",
-  "kids": "",
-  "free": true
- },
- {
   "title": "Shilpa Gupta – GAM",
   "start": "2026-09-15",
   "end": "2027-01-06",
@@ -208,6 +192,18 @@
   "free": true
  },
  {
+  "title": "Charity shop della Croce Rossa per Natale – corso Garibaldi",
+  "start": "2026-11-20",
+  "end": "2026-12-24",
+  "time": "11:00",
+  "end_time": "19:00",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1877_il-charity-shop-della-croce-rossa-torna-per-natale-acquisti-solidali-e-idee-regalo-in-corso-garibaldi",
+  "note": "",
+  "cat": "Mercatino"
+ },
+ {
   "title": "Villaggio delle Meraviglie – Natale ai Giardini Montanelli",
   "start": "2026-11-20",
   "end": "2027-01-10",
@@ -221,22 +217,6 @@
   "url": "https://www.milanodascrocco.com/evento.php?nome=1800_villaggio-delle-meraviglie-2026-dal-20-novembre-torna-il-natale-ai-giardini-indro-montanelli",
   "note": "",
   "kids": "adatto",
-  "free": true
- },
- {
-  "title": "DELTA MATTER – mostra collettiva, Spazio Milesi",
-  "start": "2026-11-20",
-  "end": "2026-11-25",
-  "time": "",
-  "end_time": "18:00",
-  "source": "Milano da Scrocco",
-  "group": "Altro",
-  "cat": "Mostra",
-  "venue": "Milano",
-  "price": "Gratis / low cost",
-  "url": "https://www.milanodascrocco.com/evento.php?nome=1808_delta-matter-a-milano-una-mostra-collettiva-internazionale-allo-spazio-milesi",
-  "note": "",
-  "kids": "",
   "free": true
  },
  {
@@ -256,6 +236,18 @@
   "free": true
  },
  {
+  "title": "Milano Drawing Week 2026 – mostre, workshop e incontri sul disegno",
+  "start": "2026-11-21",
+  "end": "2026-11-29",
+  "time": "",
+  "end_time": "18:00",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1860_milano-drawing-week-2026-nove-giorni-di-mostre-workshop-e-incontri-dedicati-al-disegno-contemporaneo",
+  "note": "",
+  "cat": "Festival"
+ },
+ {
   "title": "Together To Shop – charity shop Fondazione TOG",
   "start": "2026-11-23",
   "end": "2026-11-28",
@@ -269,22 +261,6 @@
   "url": "https://www.milanodascrocco.com/evento.php?nome=1823_together-to-shop-a-milano-torna-il-charity-shop-di-fondazione-tog",
   "note": "",
   "kids": "adatto",
-  "free": true
- },
- {
-  "title": "LIBƎRO: gruppo di lettura a NoLo – “Goethe muore” di Thomas Bernhard",
-  "start": "2026-11-23",
-  "end": "2026-11-23",
-  "time": "19:30",
-  "end_time": "",
-  "source": "Milano da Scrocco",
-  "group": "Altro",
-  "cat": "Incontro",
-  "venue": "Milano",
-  "price": "Gratis / low cost",
-  "url": "https://www.milanodascrocco.com/evento.php?nome=1748_libero-a-nolo-un-gruppo-di-lettura-aperto-a-tutti-per-parlare-di-goethe-muore-di-thomas-bernhard",
-  "note": "",
-  "kids": "",
   "free": true
  },
  {
@@ -304,36 +280,16 @@
   "free": true
  },
  {
-  "title": "BookCity: workshop gratuito under 35 sull'abitare collaborativo",
+  "title": "“La Repubblica. Una storia di futuro” – mostra al Museo della Permanente",
   "start": "2026-11-24",
-  "end": "2026-11-24",
-  "time": "15:00",
-  "end_time": "19:00",
-  "source": "Milano da Scrocco",
-  "group": "Altro",
-  "cat": "Festival",
-  "venue": "Milano",
-  "price": "Gratis / low cost",
-  "url": "https://www.milanodascrocco.com/evento.php?nome=1820_bookcity-milano-2026-un-workshop-gratuito-per-gli-under-35-sul-futuro-dellabitare-collaborativo-e-la-crisi-abitativa",
-  "note": "",
-  "kids": "",
-  "free": true
- },
- {
-  "title": "BookCity: libri e aperitivo da AmaMi Ancora",
-  "start": "2026-11-25",
-  "end": "2026-11-25",
+  "end": "2027-01-14",
   "time": "",
-  "end_time": "",
-  "source": "Milano da Scrocco",
-  "group": "Altro",
-  "cat": "Festival",
+  "end_time": "18:00",
   "venue": "Milano",
   "price": "Gratis / low cost",
-  "url": "https://www.milanodascrocco.com/evento.php?nome=1824_bookcity-milano-2026-libri-immaginazione-e-aperitivo-da-amami-ancora-con-tre-autori-e-degustazioni-gratuite",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1837_la-repubblica-una-storia-di-futuro-una-mostra-per-i-50-anni-del-quotidiano-al-museo-della-permanente-di-milano",
   "note": "",
-  "kids": "",
-  "free": true
+  "cat": "Mostra"
  },
  {
   "title": "Mimmo Dabbrescia – mostra fotografica gratuita",
@@ -432,6 +388,42 @@
   "free": true
  },
  {
+  "title": "GAM MATSURI – festa dell’artigianato giapponese",
+  "start": "2026-11-28",
+  "end": "2026-11-29",
+  "time": "10:00",
+  "end_time": "19:00",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1865_gam-matsuri-il-28-e-29-novembre-torna-la-festa-dellartigianato-giapponese",
+  "note": "",
+  "cat": "Mercatino"
+ },
+ {
+  "title": "Svuota Studi – mercatino gratuito di design, vintage e antiquariato",
+  "start": "2026-11-28",
+  "end": "2026-11-29",
+  "time": "10:00",
+  "end_time": "19:00",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1871_svuota-studi-a-milano-un-mercatino-gratuito-tra-design-vintage-e-pezzi-dantiquariato",
+  "note": "",
+  "cat": "Mercatino"
+ },
+ {
+  "title": "Piccolo Mercatino Nordico – Fondazione Ambrosianeum",
+  "start": "2026-11-28",
+  "end": "2026-11-29",
+  "time": "10:00",
+  "end_time": "19:00",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1873_piccolo-mercatino-nordico-il-28-e-29-novembre-torna-la-decima-edizione-alla-fondazione-ambrosianeum",
+  "note": "",
+  "cat": "Mercatino"
+ },
+ {
   "title": "Drag Me To Fest 2026 – festival horror gratuito",
   "start": "2026-11-28",
   "end": "2026-11-29",
@@ -496,6 +488,18 @@
   "free": true
  },
  {
+  "title": "The Car of the Year 2027 a CityLife – auto finaliste e test drive gratuiti",
+  "start": "2026-11-28",
+  "end": "2026-12-08",
+  "time": "",
+  "end_time": "",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1878_the-car-of-the-year-2027-a-citylife-in-mostra-le-sette-auto-finaliste-con-test-drive-gratuiti",
+  "note": "",
+  "cat": "Mostra"
+ },
+ {
   "title": "Milano al Duomo: Museo del Duomo gratis",
   "start": "2026-11-29",
   "end": "2026-11-29",
@@ -542,6 +546,18 @@
   "note": "",
   "kids": "adatto",
   "free": true
+ },
+ {
+  "title": "L’incanto del presepe a Baggio – concerto gratuito di Vivaldi",
+  "start": "2026-11-29",
+  "end": "2026-11-29",
+  "time": "15:30",
+  "end_time": "",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1870_lincanto-del-presepe-a-baggio-un-concerto-gratuito-di-vivaldi-e-lapertura-del-presepe-biblico",
+  "note": "",
+  "cat": "Musica"
  },
  {
   "title": "Mercatone dell’Antiquariato sul Naviglio Grande",
@@ -592,6 +608,30 @@
   "free": true
  },
  {
+  "title": "KO=GHEI all’ADI Design Museum – mostra gratuita sull’artigianato giapponese",
+  "start": "2026-12-01",
+  "end": "2026-12-08",
+  "time": "10:00",
+  "end_time": "22:00",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1863_koghei-alladi-design-museum-la-mostra-gratuita-dedicata-allartigianato-giapponese",
+  "note": "",
+  "cat": "Mostra"
+ },
+ {
+  "title": "Sognicorti “Ammonite” – serata gratuita di cortometraggi al Cinema San Fedele",
+  "start": "2026-12-03",
+  "end": "2026-12-03",
+  "time": "18:00",
+  "end_time": "",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1876_sognicorti-presenta-ammonite-una-serata-gratuita-di-cortometraggi-al-cinema-san-fedele",
+  "note": "",
+  "cat": "Cinema"
+ },
+ {
   "title": "Artigiano in Fiera 2026 (Rho) – ingresso gratuito",
   "start": "2026-12-05",
   "end": "2026-12-13",
@@ -622,6 +662,54 @@
   "note": "",
   "kids": "adatto",
   "free": true
+ },
+ {
+  "title": "Prima domenica del mese: musei gratis a Milano",
+  "start": "2026-12-06",
+  "end": "2026-12-06",
+  "time": "10:00",
+  "end_time": "20:00",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1790_prima-domenica-del-mese-musei-gratis-a-milano",
+  "note": "",
+  "cat": "Mostra"
+ },
+ {
+  "title": "Pinacoteca Ambrosiana e Cripta di San Sepolcro – apertura serale a 3€",
+  "start": "2026-12-06",
+  "end": "2026-12-06",
+  "time": "18:00",
+  "end_time": "21:00",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1875_pinacoteca-ambrosiana-e-cripta-di-san-sepolcro-apertura-serale-straordinaria-a-3-euro",
+  "note": "",
+  "cat": "Mostra"
+ },
+ {
+  "title": "ARTINO FAAA 2026 – arte, artigianato e design a Casa degli Artisti",
+  "start": "2026-12-11",
+  "end": "2026-12-13",
+  "time": "10:00",
+  "end_time": "20:00",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1866_artino-faaa-2026-tre-giorni-tra-arte-artigianato-e-design-a-casa-degli-artisti",
+  "note": "",
+  "cat": "Mercatino"
+ },
+ {
+  "title": "ONDA MARKET Christmas Edition (Rho) – vintage, antiquariato e musica",
+  "start": "2026-12-20",
+  "end": "2026-12-20",
+  "time": "11:00",
+  "end_time": "20:00",
+  "venue": "Milano",
+  "price": "Gratis / low cost",
+  "url": "https://www.milanodascrocco.com/evento.php?nome=1869_onda-market-christmas-edition-a-rho-torna-il-mercatino-tra-vintage-antiquariato-e-musica",
+  "note": "",
+  "cat": "Mercatino"
  },
  {
   "title": "Mercatone dell’Antiquariato sul Naviglio Grande",

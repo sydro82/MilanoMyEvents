@@ -1,83 +1,15 @@
 [
  {
-  "title": "NIDABA FAMILY BAND",
-  "start": "2026-11-26",
-  "end": "2026-11-26",
-  "time": "20:00",
-  "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
-  "venue": "Nidaba Theatre",
-  "price": "",
-  "url": "https://nidaba.it/nidaba-family-band-5/",
-  "note": "",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "NIDABA FAMILY BAND",
-  "start": "2026-11-26",
-  "end": "2026-11-26",
-  "time": "22:00",
-  "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
-  "venue": "Nidaba Theatre",
-  "price": "",
-  "url": "https://nidaba.it/nidaba_family_band/",
-  "note": "",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "Amanda e La Banda: Celebrating 25 Years of Blues",
-  "start": "2026-11-27",
-  "end": "2026-11-27",
-  "time": "20:00",
-  "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
-  "venue": "Nidaba Theatre",
-  "price": "",
-  "url": "https://nidaba.it/amanda-e-la-banda-celebrating-25-years-of-blues/",
-  "note": "",
-  "kids": "",
-  "free": false
- },
- {
-  "title": "Amanda e La Banda: Celebrating 25 Years of Blues",
-  "start": "2026-11-27",
-  "end": "2026-11-27",
-  "time": "22:30",
-  "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
-  "venue": "Nidaba Theatre",
-  "price": "",
-  "url": "https://nidaba.it/amanda-tosoni-e-la-banda-15/",
-  "note": "",
-  "kids": "",
-  "free": false
- },
- {
   "title": "MILANOANS Swing Jazz Band",
   "start": "2026-11-28",
   "end": "2026-11-28",
   "time": "17:30",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/30-years-celebration-nidaba-theatre%e2%9c%a8-milanoans_swing_jazz-band-2/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "THE HOT DOGS",
@@ -85,15 +17,11 @@
   "end": "2026-11-28",
   "time": "20:00",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/the-hot-dogs-3/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "THE HOT DOGS",
@@ -101,15 +29,11 @@
   "end": "2026-11-28",
   "time": "22:30",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/the-hot-dogs-2/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "The Rolls Roots",
@@ -117,15 +41,11 @@
   "end": "2026-12-03",
   "time": "20:00",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/the-rools-roots/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "JANE JERESA BAND",
@@ -133,15 +53,11 @@
   "end": "2026-12-04",
   "time": "20:00",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/jane-jeresa-band-8/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "JANE JERESA BAND",
@@ -149,15 +65,11 @@
   "end": "2026-12-04",
   "time": "22:30",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/jane-jeresa-band-7/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "MELTY GROOVE",
@@ -165,15 +77,11 @@
   "end": "2026-12-05",
   "time": "20:00",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/melty-groove-9/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "MELTY GROOVE",
@@ -181,15 +89,35 @@
   "end": "2026-12-05",
   "time": "22:30",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/melty-groove-7/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
+ },
+ {
+  "title": "TOTAL REVERENDS",
+  "start": "2026-12-10",
+  "end": "2026-12-10",
+  "time": "20:00",
+  "end_time": "",
+  "venue": "Nidaba Theatre",
+  "price": "",
+  "url": "https://nidaba.it/total-reverends-live-al-nidaba-theatre/",
+  "note": "",
+  "cat": "Concerto"
+ },
+ {
+  "title": "TOTAL REVERENDS",
+  "start": "2026-12-10",
+  "end": "2026-12-10",
+  "time": "22:00",
+  "end_time": "",
+  "venue": "Nidaba Theatre",
+  "price": "",
+  "url": "https://nidaba.it/total-reverends-live-al-nidaba-theatre-30years-celebration-2/",
+  "note": "",
+  "cat": "Concerto"
  },
  {
   "title": "SOUL BROTHERS feat. SAMOO",
@@ -197,15 +125,35 @@
   "end": "2026-12-11",
   "time": "20:00",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/soul-brothers-featuring-samoo/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
+ },
+ {
+  "title": "SOUL BROTHERS feat. SAMOO",
+  "start": "2026-12-11",
+  "end": "2026-12-11",
+  "time": "22:30",
+  "end_time": "",
+  "venue": "Nidaba Theatre",
+  "price": "",
+  "url": "https://nidaba.it/soul-brothers-featuring-samoo-live-al-nidaba-theatre/",
+  "note": "",
+  "cat": "Concerto"
+ },
+ {
+  "title": "MAMA BLUEGRASS BAND – Mama Xmas Party!",
+  "start": "2026-12-12",
+  "end": "2026-12-12",
+  "time": "20:00",
+  "end_time": "",
+  "venue": "Nidaba Theatre",
+  "price": "",
+  "url": "https://nidaba.it/mama-bluegrass-band-mama-xmas-party-%f0%9f%8e%84/",
+  "note": "",
+  "cat": "Concerto"
  },
  {
   "title": "MAMA BLUEGRASS BAND – Mama Xmas Party!",
@@ -213,15 +161,11 @@
   "end": "2026-12-12",
   "time": "22:30",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/the-mama-bluegrass-band-live-al-nidaba-theatre/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "SUNDAY COMPANY – Christmas Gospel Special",
@@ -229,15 +173,11 @@
   "end": "2026-12-18",
   "time": "20:00",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/sunday-company-christmas-gospel-special/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "SUNDAY COMPANY – Christmas Gospel Special",
@@ -245,15 +185,11 @@
   "end": "2026-12-18",
   "time": "22:30",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "",
   "url": "https://nidaba.it/sunday-company/",
   "note": "",
-  "kids": "",
-  "free": false
+  "cat": "Concerto"
  },
  {
   "title": "Vincent Williams",
@@ -261,15 +197,11 @@
   "end": "2026-12-19",
   "time": "20:00",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "Gratis con prenotazione",
   "url": "https://nidaba.it/vincent-williams-5/",
   "note": "",
-  "kids": "",
-  "free": true
+  "cat": "Concerto"
  },
  {
   "title": "Vincent Williams",
@@ -277,14 +209,10 @@
   "end": "2026-12-19",
   "time": "22:30",
   "end_time": "",
-  "source": "Nidaba",
-  "group": "Concerti",
-  "cat": "Concerto",
   "venue": "Nidaba Theatre",
   "price": "Gratis con prenotazione",
   "url": "https://nidaba.it/vincent-williams-4/",
   "note": "",
-  "kids": "",
-  "free": true
+  "cat": "Concerto"
  }
 ]
