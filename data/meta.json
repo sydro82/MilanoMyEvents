@@ -1,0 +1,78 @@
+{
+ "snapshot": "2026-11-28",
+ "updated": "28 novembre 2026, 14:53",
+ "sources": [
+  {
+   "name": "Corte dei Miracoli",
+   "url": "https://www.latigredicarta.it/corte_dei_miracoli/calendario/",
+   "status": "OK · 26",
+   "cls": "ok"
+  },
+  {
+   "name": "Biko",
+   "url": "https://www.bikoclub.net/",
+   "status": "OK · 25",
+   "cls": "ok"
+  },
+  {
+   "name": "Osteria del Jazz",
+   "url": "",
+   "status": "Manuale · locandine WA",
+   "cls": "ok"
+  },
+  {
+   "name": "Better Together (sito)",
+   "url": "https://www.bettertogetherspace.it/#ritrovi",
+   "status": "OK · 21",
+   "cls": "ok"
+  },
+  {
+   "name": "Better Together (Instagram)",
+   "url": "https://www.instagram.com/better.together.space/",
+   "status": "OK · post settimanale",
+   "cls": "ok"
+  },
+  {
+   "name": "Nidaba",
+   "url": "https://nidaba.it/concerti/concerti/",
+   "status": "OK · 18",
+   "cls": "ok"
+  },
+  {
+   "name": "Planetario",
+   "url": "https://booking.lofficina.eu/Sito/Default.aspx?partner=PLAN",
+   "status": "OK · 81",
+   "cls": "ok"
+  },
+  {
+   "name": "Teatro Carcano",
+   "url": "https://www.teatrocarcano.com/",
+   "status": "Manuale · link singoli",
+   "cls": "ok"
+  },
+  {
+   "name": "Milano da Scrocco",
+   "url": "https://www.milanodascrocco.com/eventi.php",
+   "status": "OK · 44",
+   "cls": "ok"
+  },
+  {
+   "name": "Teatri Possibili",
+   "url": "https://www.teatripossibili.it/eventi/elenco/",
+   "status": "OK · 12",
+   "cls": "ok"
+  },
+  {
+   "name": "ParteciPrato (newsletter)",
+   "url": "https://mailchi.mp/26b169cc6c44/bnewsletter_parteciprato-12758817",
+   "status": "Manuale · newsletter",
+   "cls": "ok"
+  },
+  {
+   "name": "MilanoToday",
+   "url": "https://www.milanotoday.it/eventi/tipo/concerti~corsi~mostre~sport~teatri/",
+   "status": "Bloccato (403)",
+   "cls": "ko"
+  }
+ ]
+}

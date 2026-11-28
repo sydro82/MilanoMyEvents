@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Milano My Events</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f4ee; --card:#fff; --ink:#1d1b18; --muted:#6f6a62; --line:#e6e0d5;
+  --c-concerti:#c2410c; --c-bt:#7c3aed; --c-altro:#0f766e; --accent:#1d1b18;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#16150f;--card:#201e18;--ink:#f1ede4;--muted:#a39d91;--line:#35322a;
+  --c-concerti:#fb923c;--c-bt:#a78bfa;--c-altro:#2dd4bf;--accent:#f1ede4}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 Inter,system-ui,sans-serif}
+header{padding:28px 24px 8px;max-width:1180px;margin:0 auto}
+h1{font-family:Fraunces,serif;font-weight:700;font-size:34px;margin:0;letter-spacing:-.5px}
+.sub{color:var(--muted);margin-top:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 48px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 10px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
+.seg button{border:0;background:none;color:var(--ink);padding:7px 14px;font:inherit;cursor:pointer}
+.seg button.on{background:var(--accent);color:var(--bg)}
+.actions{display:flex;align-items:center;gap:8px;margin-top:12px}
+.sharebtn{width:34px;height:34px;border-radius:999px;border:0;background:var(--accent);color:var(--bg);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex:none}
+.h1share{margin-left:auto}
+.sharebtn:hover{opacity:.85}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--accent);color:var(--bg);padding:8px 16px;border-radius:999px;font-size:13px;z-index:20;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+.propose{display:inline-block;padding:7px 14px;border-radius:999px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;font-size:13px}
+.propose:hover{opacity:.85}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:44px;height:44px;border-radius:10px;flex:none}
+.seg.off{opacity:.35;pointer-events:none}
+.iconbtn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.iconbtn.on{background:var(--accent);color:var(--bg)}
+input[type=search][hidden]{display:none}
+input[type=search]{flex:1;min-width:180px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 11px;font:inherit;font-size:12.5px;cursor:pointer}
+.chip.on{border-color:var(--ink);font-weight:600}
+.chip .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.lbl{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:10px 0 2px}
+.stats{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0 0;color:var(--muted)}
+.acc{margin:8px 0;border-top:1px solid var(--line);padding-top:6px}
+.acc summary{cursor:pointer;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);list-style:none;padding:4px 0}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::before{content:"▸ ";display:inline-block;transition:transform .15s}
+.acc[open] summary::before{content:"▾ "}
+.legend{font-size:12px;color:var(--muted);margin-top:4px}
+.acc summary span{text-transform:none;letter-spacing:0;color:var(--ink);font-weight:600}
+.stats b{color:var(--ink);font-size:18px;font-family:Fraunces,serif;margin-right:4px}
+.grid2{display:grid;grid-template-columns:1fr 300px;gap:24px;margin-top:14px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+@media (max-width:640px){#view{display:none}}
+.day{margin:0 0 6px;font-family:Fraunces,serif;font-size:19px;display:flex;align-items:baseline;gap:10px;position:sticky;top:0;background:var(--bg);padding:6px 0;z-index:2}
+.day small{font-family:Inter;font-size:12px;color:var(--muted)}
+.day.today{color:var(--c-concerti)}
+.anchor{height:18px;scroll-margin-top:-18px}
+.dnav{margin-left:auto;display:flex;gap:6px}
+.dnav button{width:30px;height:30px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:18px;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.dnav button:disabled{opacity:.3;cursor:default}
+.ev{display:grid;grid-template-columns:58px 1fr;gap:10px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--g);border-radius:10px;padding:10px 12px;margin:6px 0}
+.ev .t{font-weight:600;font-variant-numeric:tabular-nums}
+.ev .t small{display:block;font-weight:400;color:var(--muted);font-size:11.5px}
+.ev a.title{color:var(--ink);text-decoration:none;font-weight:600}
+.ev a.title:hover{text-decoration:underline}
+.meta{color:var(--muted);font-size:12.5px;margin-top:2px}
+.tags{margin-top:5px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{font-size:11px;padding:1px 7px;border-radius:999px;background:color-mix(in srgb,var(--g) 14%,transparent);color:var(--g);font-weight:600}
+.note{font-size:12px;color:#b45309;margin-top:4px}
+.gcal{font-size:11.5px;color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--muted)}
+aside .box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:16px}
+aside h3{font-family:Fraunces,serif;margin:0 0 8px;font-size:17px}
+.long{padding:7px 0;border-top:1px solid var(--line)}
+.long:first-of-type{border-top:0}
+.long a{color:var(--ink);text-decoration:none;font-weight:500}
+.long small{display:block;color:var(--muted)}
+.src{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-top:1px solid var(--line);font-size:12.5px}
+.src:first-of-type{border-top:0}
+.src a{color:var(--ink)}
+.ok{color:#15803d}.ko{color:#b91c1c}.warn{color:#b45309}
+/* month */
+.mhead{display:flex;align-items:center;gap:10px;margin:8px 0}
+.mhead h2{font-family:Fraunces,serif;margin:0;font-size:22px;min-width:190px;text-transform:capitalize}
+.mhead button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer}
+.month{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.month .dn{font-size:11px;text-transform:uppercase;color:var(--muted);padding:2px 4px}
+.cell{background:var(--card);border:1px solid var(--line);border-radius:8px;min-height:104px;padding:4px;overflow:hidden;cursor:pointer}
+.cell.out{opacity:.4}
+.cell.today{outline:2px solid var(--c-concerti)}
+.cell .n{font-size:12px;font-weight:600}
+.pill{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:3px solid var(--g);padding-left:4px;margin-top:2px}
+.more{font-size:11px;color:var(--muted)}
+.empty{color:var(--muted);padding:30px 0;text-align:center}
+footer{color:var(--muted);font-size:12px;margin-top:28px}
+</style>
+</head>
+<body>
+<header>
+  <h1 class="brand"><img src="logo.png" alt="MME" width="44" height="44">Milano My Events</h1>
+  <div class="sub">Concerti, ritrovi ed eventi unificati dalle tue fonti · aggiornato il <span id="upd"></span></div>
+  <div class="actions"><a class="propose" href="https://docs.google.com/forms/d/e/1FAIpQLSfFnA3kNeLXcWYXN6R-b5OzC9S1ODKIlm3F49-tJBzIdMUWrA/viewform" target="_blank" rel="noopener">＋ Proponi un evento o una fonte</a><button class="sharebtn" aria-label="Condividi" title="Condividi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></div>
+</header>
+<div class="wrap">
+  <div class="stats" id="stats"></div>
+  <div class="bar">
+    <div class="seg" id="view">
+      <button data-v="month">Calendario</button><button data-v="agenda" class="on">Lista</button>
+    </div>
+    <div class="seg" id="range">
+      <button data-r="oggi">Oggi</button><button data-r="domani">Domani</button><button data-r="weekend">Weekend</button><button data-r="all" class="on">All</button>
+    </div>
+    <button id="qbtn" class="iconbtn" aria-label="Cerca" title="Cerca"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+    <input type="search" id="q" placeholder="Cerca artista, luogo, titolo…" hidden>
+  </div>
+    <div class="lbl">Categoria</div><div class="chips" id="groups"></div>
+  <details class="acc"><summary>Filtri avanzati <span id="advN"></span></summary>
+    <div class="lbl">Tipo</div><div class="chips" id="cats"></div>
+    <div class="lbl">Fonte</div><div class="chips" id="srcs"></div>
+  </details>
+  <div class="grid2">
+    <div>
+      <main id="main"></main>
+    </div>
+    <aside>
+      <div class="box"><h3>In corso (mostre e periodi lunghi)</h3><div id="long"></div></div>
+      <div style="margin:-4px 0 16px"><div class="actions"><a class="propose" href="https://docs.google.com/forms/d/e/1FAIpQLSfFnA3kNeLXcWYXN6R-b5OzC9S1ODKIlm3F49-tJBzIdMUWrA/viewform" target="_blank" rel="noopener">＋ Proponi un evento o una fonte</a><button class="sharebtn" aria-label="Condividi" title="Condividi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></div></div>
+      <details class="acc"><summary>Stato fonti e legenda</summary>
+        <div class="lbl">Stato fonti</div><div id="status"></div>
+        <div class="lbl">Legenda</div><div class="legend">La categoria Gratis è trasversale e include gli eventi dichiarati gratuiti dalla fonte più tutti quelli di Milano da Scrocco (sito di eventi gratis o low cost: per alcuni la gratuità non è confermata). La categoria Bambini è un filtro trasversale e una mia classificazione: le fonti lo indicano solo per gli eventi "per bambini" (laboratori, teatro ragazzi); "adatto" = diurno, mostre, mercatini, eventi natalizi. I dati vengono dalle pagine pubbliche delle fonti: prima di andare, controlla orari e prezzi sul link dell'evento.</div>
+      </details>
+    </aside>
+  </div>
+</div>
+<script>
+const DATA = __DATA__;
+const META = __META__;
+const GROUP_COL = {"Concerti":"var(--c-concerti)","Better":"var(--c-bt)","Teatro":"#be185d","Cinema":"#4f46e5","Corsi":"#a16207","Bambini":"#2563eb","Gratis":"#15803d","Altro":"var(--c-altro)"};
+const LONG_DAYS = 7;
+const st = {view:"agenda", range:"all", q:"", kids:"", groups:new Set(), cats:new Set(), srcs:new Set(), month:null};
+const $ = s => document.querySelector(s);
+const pd = s => { const [y,m,d]=s.split("-").map(Number); return new Date(y,m-1,d); };
+const iso = d => d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const span = e => (pd(e.end)-pd(e.start))/864e5;
+const isLong = e => span(e) > LONG_DAYS;
+const fmtD = (s,opt) => pd(s).toLocaleDateString("it-IT",opt);
+let today = iso(new Date());
+if (today < META.snapshot) today = META.snapshot;
+st.month = today.slice(0,7);
+$("#upd").textContent = META.updated;
+
+function chipRow(el, key, values, colorFn){
+  el.innerHTML = "";
+  values.forEach(v=>{
+    const b=document.createElement("button"); b.className="chip"+(st[key].has(v)?" on":"");
+    b.innerHTML=(colorFn?`<span class="dot" style="background:${colorFn(v)}"></span>`:"")+esc(v);
+    b.onclick=()=>{st[key].has(v)?st[key].delete(v):st[key].add(v);render();};
+    el.appendChild(b);
+  });
+}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function match(e){
+  if(st.groups.size && !(st.groups.has(e.group) || (st.groups.has("Bambini") && e.kids) || (st.groups.has("Gratis") && e.free))) return false;
+  if(st.cats.size && !st.cats.has(e.cat)) return false;
+  if(st.srcs.size && !st.srcs.has(e.source)) return false;
+  if(st.q){const q=st.q.toLowerCase(); if(!(e.title+" "+e.venue+" "+e.source+" "+e.cat).toLowerCase().includes(q)) return false;}
+  return e.end >= today;
+}
+function addD(s,n){const d=pd(s);d.setDate(d.getDate()+n);return iso(d);}
+function rangeBounds(){
+  if(st.range==="all") return [today,"9999-12-31"];
+  if(st.range==="oggi") return [today,today];
+  if(st.range==="domani") return [addD(today,1),addD(today,1)];
+  if(st.range==="weekend"){ const wd=pd(today).getDay(); // 0 dom, 6 sab
+    if(wd===0) return [today,today]; if(wd===6) return [today,addD(today,1)];
+    const sat=addD(today,6-wd); return [sat,addD(sat,1)]; }
+  return [today,addD(today,Number(st.range)-1)];
+}
+function gcal(e){
+  const ds=e.start.replace(/-/g,""), de=e.end.replace(/-/g,"");
+  let dates;
+  if(e.time){
+    const t=e.time.replace(":","")+"00";
+    const et=e.end_time ? e.end_time.replace(":","")+"00" : String(Math.min(23,Number(e.time.slice(0,2))+2)).padStart(2,"0")+e.time.slice(3)+"00";
+    const endDay = (e.end_time && e.end_time<=e.time) ? iso(new Date(pd(e.start).getTime()+864e5)).replace(/-/g,"") : ds;
+    dates=ds+"T"+t+"/"+endDay+"T"+et;
+  } else { const n=new Date(pd(e.end).getTime()+864e5); dates=ds+"/"+iso(n).replace(/-/g,""); }
+  const p=new URLSearchParams({action:"TEMPLATE",text:e.title,dates,ctz:"Europe/Rome",location:e.venue,details:(e.price?e.price+"\n":"")+(e.url||e.note)});
+  return "https://calendar.google.com/calendar/render?"+p.toString();
+}
+function evCard(e){
+  const col=GROUP_COL[e.group];
+  const time=e.time?esc(e.time)+(e.end_time?`<small>→ ${esc(e.end_time)}</small>`:""):"<small>tutto il giorno</small>";
+  const multi=e.start!==e.end?` · fino al ${fmtD(e.end,{day:"numeric",month:"short"})}`:"";
+  return `<div class="ev" style="--g:${col}"><div class="t">${time}</div><div>
+    ${e.url?`<a class="title" href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>`:`<span class="title" style="font-weight:600">${esc(e.title)}</span>`}
+    <div class="meta">${esc(e.venue)}${multi}${e.price?" · "+esc(e.price):""}</div>
+    <div class="tags"><span class="tag">${esc(e.cat)}</span>${e.free?`<span class="tag" style="--g:#15803d">Gratis</span>`:""}${e.kids?`<span class="tag" style="--g:#2563eb">${e.kids==="per"?"Per bambini":"Adatto ai bambini"}</span>`:""}<span class="tag" style="--g:var(--muted)">${esc(e.source)}</span>
+    <a class="gcal" href="${gcal(e)}" target="_blank" rel="noopener">+ Google Calendar</a></div>
+    ${e.note?`<div class="note">${esc(e.note)}</div>`:""}</div></div>`;
+}
+function occurrences(list, from, to){
+  const days={};
+  list.forEach(e=>{
+    let d=pd(e.start<from?from:e.start); const end=e.end>to?to:e.end;
+    while(iso(d)<=end){ (days[iso(d)]=days[iso(d)]||[]).push(e); d.setDate(d.getDate()+1); }
+  });
+  Object.values(days).forEach(a=>a.sort((x,y)=>(x.time||"99").localeCompare(y.time||"99")));
+  return days;
+}
+function renderAgenda(short){
+  const [from,to]=rangeBounds(); const days=occurrences(short,from,to);
+  const keys=Object.keys(days).sort();
+  if(!keys.length) return `<div class="empty">Nessun evento con questi filtri.</div>`;
+  return keys.map((k,i)=>`<div class="anchor" id="d-${k}"></div><div class="day${k===today?" today":""}">${fmtD(k,{weekday:"long",day:"numeric",month:"long"})}<small>${days[k].length} eventi${k===today?" · oggi":""}</small><span class="dnav"><button data-go="${keys[i-1]||""}" ${i?"":"disabled"} aria-label="Giorno precedente">‹</button><button data-go="${keys[i+1]||""}" ${i<keys.length-1?"":"disabled"} aria-label="Giorno successivo">›</button></span></div>`+days[k].map(evCard).join("")).join("");
+}
+function renderMonth(short){
+  const [y,m]=st.month.split("-").map(Number); const first=new Date(y,m-1,1);
+  const start=new Date(first); start.setDate(1-((first.getDay()+6)%7));
+  const cells=[]; for(let i=0;i<42;i++){const d=new Date(start);d.setDate(start.getDate()+i);cells.push(d);}
+  const days=occurrences(short,iso(cells[0]),iso(cells[41]));
+  let h=`<div class="mhead"><button id="pm">‹</button><h2>${first.toLocaleDateString("it-IT",{month:"long",year:"numeric"})}</h2><button id="nm">›</button></div><div class="month">`;
+  ["lun","mar","mer","gio","ven","sab","dom"].forEach(d=>h+=`<div class="dn">${d}</div>`);
+  cells.forEach(d=>{const k=iso(d);const ev=(days[k]||[]).filter(e=>k>=today||true);
+    h+=`<div class="cell${d.getMonth()!==m-1?" out":""}${k===today?" today":""}" data-d="${k}"><div class="n">${d.getDate()}</div>`+
+      ev.slice(0,4).map(e=>`<span class="pill" style="--g:${GROUP_COL[e.group]}" title="${esc(e.title)}">${e.time?esc(e.time)+" ":""}${esc(e.title)}</span>`).join("")+
+      (ev.length>4?`<span class="more">+${ev.length-4} altri</span>`:"")+`</div>`;});
+  return h+"</div>";
+}
+function render(){
+  const all=DATA.filter(match);
+  const short=all.filter(e=>!isLong(e)), long=all.filter(isLong);
+  chipRow($("#groups"),"groups",["Better","Concerti","Teatro","Cinema","Corsi","Bambini","Gratis","Altro"],g=>GROUP_COL[g]);
+  chipRow($("#cats"),"cats",[...new Set(DATA.map(e=>e.cat))].sort());
+  chipRow($("#srcs"),"srcs",[...new Set(DATA.map(e=>e.source))]);
+  const [from,to]=rangeBounds(); const inRange=short.filter(e=>e.start<=to&&e.end>=from);
+  const wkEnd=iso(new Date(pd(today).getTime()+6*864e5));
+  $("#stats").innerHTML=`<span><b>${inRange.length}</b>eventi nel periodo</span>`;
+  const nAdv=st.cats.size+st.srcs.size; $("#advN").textContent=nAdv?`· ${nAdv} attivi`:"";
+  $("#main").innerHTML = st.view==="agenda" ? renderAgenda(short) : renderMonth(short);
+  $("#range").classList.toggle("off",st.view!=="agenda");
+  if(st.view==="month"){
+    $("#pm").onclick=()=>{const [y,m]=st.month.split("-").map(Number);const d=new Date(y,m-2,1);st.month=iso(d).slice(0,7);render();};
+    $("#nm").onclick=()=>{const [y,m]=st.month.split("-").map(Number);const d=new Date(y,m,1);st.month=iso(d).slice(0,7);render();};
+    document.querySelectorAll(".cell").forEach(c=>c.onclick=()=>{const k=c.dataset.d;const ev=occurrences(short,k,k)[k]||[];
+      $("#main").insertAdjacentHTML("beforeend",""); showDay(k,ev);});
+  }
+  $("#long").innerHTML = long.length ? long.sort((a,b)=>a.end.localeCompare(b.end)).map(e=>`<div class="long"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a><small>fino al ${fmtD(e.end,{day:"numeric",month:"short",year:"numeric"})}${e.time?" · "+e.time+(e.end_time?"–"+e.end_time:""):""} · ${esc(e.source)}</small></div>`).join("") : `<div class="meta">Nessuna.</div>`;
+}
+function showDay(k,ev){
+  let box=document.getElementById("dayDetail"); if(!box){box=document.createElement("div");box.id="dayDetail";$("#main").appendChild(box);}
+  box.innerHTML=`<div class="day" style="margin-top:18px">${fmtD(k,{weekday:"long",day:"numeric",month:"long"})}<small>${ev.length} eventi</small></div>`+(ev.length?ev.map(evCard).join(""):`<div class="empty">Nessun evento.</div>`);
+  box.scrollIntoView({behavior:"smooth",block:"start"});
+}
+$("#status").innerHTML = META.sources.map(s=>`<div class="src"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a><span class="${s.cls}">${esc(s.status)}</span></div>`).join("");
+document.querySelectorAll("#view button").forEach(b=>b.onclick=()=>{st.view=b.dataset.v;document.querySelectorAll("#view button").forEach(x=>x.classList.toggle("on",x===b));render();});
+document.querySelectorAll("#range button").forEach(b=>b.onclick=()=>{st.range=b.dataset.r;document.querySelectorAll("#range button").forEach(x=>x.classList.toggle("on",x===b));render();});
+$("#main").addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(!b||!b.dataset.go)return;const a=document.getElementById("d-"+b.dataset.go);if(a)a.scrollIntoView({behavior:"smooth",block:"start"});});
+const SHARE_URL="https://sydro82.github.io/MilanoMyEvents/";
+function toast(msg){let el=document.getElementById("toast");if(!el){el=document.createElement("div");el.id="toast";el.className="toast";document.body.appendChild(el);}el.textContent=msg;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2000);}
+document.querySelectorAll(".sharebtn").forEach(b=>b.onclick=async()=>{
+  const data={title:"Milano My Events",text:"Concerti, ritrovi ed eventi a Milano",url:SHARE_URL};
+  try{ if(navigator.share){await navigator.share(data);return;} }catch(e){ if(e&&e.name==="AbortError")return; }
+  try{ await navigator.clipboard.writeText(SHARE_URL); toast("Link copiato"); }catch(e){ toast(SHARE_URL); }
+});
+$("#q").oninput=e=>{st.q=e.target.value.trim();render();};
+$("#qbtn").onclick=()=>{const q=$("#q");const show=q.hidden;q.hidden=!show;$("#qbtn").classList.toggle("on",show);
+  if(show){q.focus();}else{q.value="";if(st.q){st.q="";render();}}};
+$("#q").onkeydown=e=>{if(e.key==="Escape")$("#qbtn").click();};
+if(window.matchMedia&&window.matchMedia("(max-width:640px)").matches) st.view="agenda";
+try{window.matchMedia("(max-width:640px)").addEventListener("change",e=>{if(e.matches&&st.view!=="agenda"){st.view="agenda";document.querySelectorAll("#view button").forEach(x=>x.classList.toggle("on",x.dataset.v==="agenda"));render();}});}catch(e){}
+render();
+</script>
+</body>
+</html>
